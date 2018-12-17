@@ -1,10 +1,10 @@
 <html>
 <head>
-    <title>Listing 6.14</title>
+    <title>Listing 6.15</title>
 </head>
 <body>
 <?php
-function addFive( $num )
+function addFive( &$num )
 {
     $num += 5;
 }
