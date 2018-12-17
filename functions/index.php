@@ -1,16 +1,14 @@
 <html>
 <head>
-    <title>Listing 6.3</title>
+    <title>Listing 6.4</title>
 </head>
 <body>
 <?php
-function printBR( $txt )
-{
-    print("$txt<br><\n");
-}
-printBR("this is a line");
-printBR("this is a new line");
-printBR("this is yet another line");
+function addNums( $firstnum, $secondnum){
+    $result = $firstnum + $secondnum;
+    return $result;ll: }
+    print addNums(3,5);
+    // will print "8"
 ?>
 </body>
 </html>
