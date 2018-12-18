@@ -1,16 +1,21 @@
 <html>
 <head>
-    <title>Listing 6.15</title>
+    <title></title>
 </head>
 <body>
 <?php
-function addFive( &$num )
-{
-    $num += 5;
+function tabel($txt1, $txt2, $txt3, $txt4){
+    echo '<table>';
+        echo '<tr>';
+            for($i = 1; $i <= 4; $i++) {
+                echo '<td>';
+                echo ${'txt'.$i};
+                echo '<td>';
+            }
+        echo '<tr>';
+    echo '</table>';
 }
-$orignum = 10;
-addFive( $orignum);
-print($orignum);
+tabel('see', 'on', 'üks', 'tabel');
 ?>
 </body>
 </html>
