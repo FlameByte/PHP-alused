@@ -22,19 +22,27 @@ $kasutajad = array(
     array(
         'alice',
         'Alice',
-        'Liddle'
+        'Liddle',
+        'female'
     ),
     array(
         'bob',
         'Bob',
-        'Builder'
+        'Builder',
+        'male'
     )
 );
 
 echo '<hr>';
 foreach ($kasutajad as $kasutaja) {
-    foreach($kasutaja as $element) {
-        echo $element.'<br>';
+    for($i = 0; $i < count($kasutaja); $i++) {
+        if($kasutaja[3] == 'female') {
+            echo '<div style="color: red">';
+        } else {
+            echo '<div style="color: blue">';
+        }
+        echo $kasutaja[$i].'</div>';
     }
+
     echo '<hr>';
 }
