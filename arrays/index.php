@@ -29,3 +29,4 @@ array_shift($kasutajad);
 
 foreach($kasutajad as $kasutaja){
     echo $kasutaja.'<br>';}
+print_r($kasutajad);
