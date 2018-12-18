@@ -12,21 +12,26 @@
 //    echo $kasutaja.'<br>';
 // }
 
+// $kasutajad = array();
+// $kasutajad[] = 'alice';
+// $kasutajad[] = 'bob';
+
+// array_push($kasutajad,'lucy');
+
 $kasutajad = array();
-$kasutajad[] = 'alice';
-$kasutajad[] = 'bob';
-
-array_push($kasutajad,'lucy');
-
-
-foreach($kasutajad as $kasutaja){
-    echo $kasutaja.'<br>';
-}
+    array(
+        'alice',
+        'Alice',
+        'Liddle'
+    ),
+    array(
+        'bob',
+        'Bob',
+        'Builder'
+    )
+);
 
 echo '<hr>';
-array_pop($kasutajad);
-array_shift($kasutajad);
-
-foreach($kasutajad as $kasutaja){
-    echo $kasutaja.'<br>';}
+echo '<pre>';
 print_r($kasutajad);
+echo '</pre>';
