@@ -18,7 +18,7 @@
 
 // array_push($kasutajad,'lucy');
 
-$kasutajad = array();
+$kasutajad = array(
     array(
         'alice',
         'Alice',
@@ -32,6 +32,9 @@ $kasutajad = array();
 );
 
 echo '<hr>';
-echo '<pre>';
-print_r($kasutajad);
-echo '</pre>';
+foreach ($kasutajad as $kasutaja) {
+    foreach($kasutaja as $element) {
+        echo $element.'<br>';
+    }
+    echo '<hr>';
+}
