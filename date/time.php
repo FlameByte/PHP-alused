@@ -41,6 +41,21 @@ $difference = $metsheina_synnipaev->diff($minu_synnipaev);
 echo 'Sünnipäevade erinevus: '.$difference->y.' aastat '
     .$difference->m.' kuud '
     .$difference->d.' päeva';
+echo '<br>';
+$some_time = time();
+echo $hours_of_day;
+function greeting($time) {
+    $hours_of_day = date('H', $time);
+    if ($hours_of_day < 13) {
+        echo 'tere hommikust';
+    } else if ($hours_of_day < 18) {
+        echo 'tere päevast';
+    } else {
+        echo 'tere õhtust';
+    }
+}
+$some_other_time = mktime(19, 14, 14, 10, 29, 1969);
+greeting($some_other_time);
 
 
 
