@@ -34,6 +34,14 @@ $date2=date_create("2019-01-11");
 $diff=date_diff($date1,$date2, true);
 echo $diff->format("jaanipäevani on aega %R%a päeva");
 
+echo '<br>';
+$metsheina_synnipaev = date_create("1980-11-06");
+$minu_synnipaev = date_create("1998-10-27");
+$difference = $metsheina_synnipaev->diff($minu_synnipaev);
+echo 'Sünnipäevade erinevus: '.$difference->y.' aastat '
+    .$difference->m.' kuud '
+    .$difference->d.' päeva';
+
 
 
 ?>
