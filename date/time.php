@@ -10,16 +10,11 @@ echo date('20.03.2013 12:31' , time());	 //20.03.2013 12:31
 
 echo '<br>';
 
-//kuude massiiv
-$eesti_kuud = array(1=>'jaanuar', 'veebruar', 'märts', 'aprill', 'mai', 'juuni', 'juuli', 'august', 'september', 'oktoober', 'november', 'detsember');
-//kuupäevad massiividesse
-$paev = date('d');
-$kuu = $eesti_kuud[date('n')];
-$aasta = date('Y');
-//kuupäeva väljastamine
-echo $paev.'.'.$kuu.' '.$aasta;	//22.veebruar2013
+$nadalapaevad = array('esmaspäev', 'teisipäev', 'kolmpaäev', 'neljapäev', 'reede', 'laupäev', 'pühapäev');
+$hetke_nadalapaev = $nadalapaevad[date('N', time()) - 1];
+echo $hetke_nadalapaev;
 
-echo paev;
+echo $paev;
 
 
 
