@@ -11,3 +11,5 @@ require_once 'conf.php';
 $iktConn = connect_db(DBHOST, DBUSER, DBPASS, DBNAME);
 echo '<pre>';
 print_r($iktConn);
+
+
