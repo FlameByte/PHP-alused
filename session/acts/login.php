@@ -23,7 +23,7 @@ $users = getData($sql, $ikt);
 
 if($users !== false){
     session_start();
-    $_SESSION['user'] = $users[0]['username'];
+    $_SESSION['user'] = $users[0];
     header('location: ../index.php');
 }
 
