@@ -9,7 +9,7 @@
 function htmlFromFile($fileName){
     $fileName = 'html/'.$fileName.'.html';
     $fp = fopen($fileName, 'r');
-    $Content = fread($fp, filesize($fileName));
+    $content = fread($fp, filesize($fileName));
     fclose($fp);
-    return $Content;
+    return $content;
 }

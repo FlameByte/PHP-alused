@@ -6,7 +6,14 @@
  * Time: 14:16
  */
 
-require_once 'fnk_php';
+require_once 'fnk.php';
+
+if(!isset($_SESSION['user'])){
+    echo 'Tere tulemast, '.$_SESSION['user'].'!<br>';
+} else {
+    $loginForm  = htmlFromFile('login');
+    echo $loginForm;
+}
 
 $loginForm = htmlFromFile('login');
 echo $loginForm;
