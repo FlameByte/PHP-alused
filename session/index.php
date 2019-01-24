@@ -6,3 +6,7 @@
  * Time: 14:16
  */
 
+require_once 'fnk_php';
+
+$loginForm = htmlFromFile('login');
+echo $loginForm;
